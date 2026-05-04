@@ -1,49 +1,63 @@
-/* Industry Cards Section */
-
 .industry-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%);
-  padding: 80px 20px;
-  margin: 60px 0;
+  background:
+    radial-gradient(circle at top left, rgba(27, 117, 187, 0.12), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #eef6ff 100%);
+  padding: 92px 20px;
+  position: relative;
 }
 
 .industry-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0 auto 48px;
+  max-width: 760px;
+}
+
+.industry-eyebrow {
+  color: #1b75bb;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .industry-header h2 {
-  font-size: 2.5rem;
+  color: #0f2c5f;
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
-  color: #333;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
   margin-bottom: 15px;
 }
 
 .industry-header p {
-  font-size: 1.1rem;
-  color: #666;
-  max-width: 500px;
+  color: #52647d;
+  font-size: 1.08rem;
+  line-height: 1.7;
   margin: 0 auto;
 }
 
 .industry-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 25px;
-  margin-bottom: 50px;
+  margin: 0 auto 44px;
+  max-width: 1240px;
 }
 
 .industry-card {
   display: block;
   text-decoration: none;
-  background: white;
-  border-radius: 16px;
-  padding: 35px;
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 26px;
+  padding: 30px;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 1px solid rgba(27, 117, 187, 0.12);
   cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 45px rgba(15, 44, 95, 0.08);
   position: relative;
   overflow: hidden;
+  min-height: 100%;
 }
 
 .industry-card::before {
@@ -52,85 +66,86 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 5px;
   transition: height 0.3s ease;
 }
 
 .industry-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: rgba(27, 117, 187, 0.28);
+  box-shadow: 0 26px 60px rgba(15, 44, 95, 0.16);
+  transform: translateY(-8px);
 }
 
 /* Color variants */
 .industry-card-tech-startup {
-  border-top: 4px solid #667eea;
+  border-top: 4px solid #1b75bb;
 }
 
 .industry-card-tech-startup::before {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1b75bb 0%, #2b40dd 100%);
 }
 
 .industry-card-tech-startup:hover {
-  border-color: #667eea;
+  border-color: rgba(27, 117, 187, 0.36);
 }
 
 .industry-card-ecommerce {
-  border-top: 4px solid #f093fb;
+  border-top: 4px solid #2b40dd;
 }
 
 .industry-card-ecommerce::before {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #2b40dd 0%, #1b75bb 100%);
 }
 
 .industry-card-ecommerce:hover {
-  border-color: #f093fb;
+  border-color: rgba(43, 64, 221, 0.34);
 }
 
 .industry-card-manufacturing {
-  border-top: 4px solid #4facfe;
+  border-top: 4px solid #0d5a9e;
 }
 
 .industry-card-manufacturing::before {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background: linear-gradient(135deg, #0d5a9e 0%, #56c6ff 100%);
 }
 
 .industry-card-manufacturing:hover {
-  border-color: #4facfe;
+  border-color: rgba(13, 90, 158, 0.34);
 }
 
 .industry-card-healthcare {
-  border-top: 4px solid #43e97b;
+  border-top: 4px solid #24b3d7;
 }
 
 .industry-card-healthcare::before {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  background: linear-gradient(135deg, #24b3d7 0%, #1b75bb 100%);
 }
 
 .industry-card-healthcare:hover {
-  border-color: #43e97b;
+  border-color: rgba(36, 179, 215, 0.34);
 }
 
 .industry-card-saas {
-  border-top: 4px solid #fa709a;
+  border-top: 4px solid #0f2c5f;
 }
 
 .industry-card-saas::before {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  background: linear-gradient(135deg, #0f2c5f 0%, #2b40dd 100%);
 }
 
 .industry-card-saas:hover {
-  border-color: #fa709a;
+  border-color: rgba(15, 44, 95, 0.34);
 }
 
 .card-icon {
-  width: 56px;
-  height: 56px;
+  width: 58px;
+  height: 58px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  font-size: 1.5rem;
+  border-radius: 18px;
+  font-size: 1.35rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -140,28 +155,28 @@
 }
 
 .industry-card-tech-startup .card-icon {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
-  color: #667eea;
+  background: linear-gradient(135deg, rgba(27, 117, 187, 0.12) 0%, rgba(43, 64, 221, 0.12) 100%);
+  color: #1b75bb;
 }
 
 .industry-card-ecommerce .card-icon {
-  background: linear-gradient(135deg, rgba(240, 147, 251, 0.2) 0%, rgba(245, 87, 108, 0.2) 100%);
-  color: #e84393;
+  background: linear-gradient(135deg, rgba(43, 64, 221, 0.12) 0%, rgba(27, 117, 187, 0.12) 100%);
+  color: #2b40dd;
 }
 
 .industry-card-manufacturing .card-icon {
-  background: linear-gradient(135deg, rgba(79, 172, 254, 0.2) 0%, rgba(0, 242, 254, 0.2) 100%);
-  color: #4facfe;
+  background: rgba(13, 90, 158, 0.12);
+  color: #0d5a9e;
 }
 
 .industry-card-healthcare .card-icon {
-  background: linear-gradient(135deg, rgba(67, 233, 123, 0.2) 0%, rgba(56, 249, 215, 0.2) 100%);
-  color: #27ae60;
+  background: rgba(36, 179, 215, 0.14);
+  color: #1893b5;
 }
 
 .industry-card-saas .card-icon {
-  background: linear-gradient(135deg, rgba(250, 112, 154, 0.2) 0%, rgba(254, 225, 64, 0.2) 100%);
-  color: #e74c3c;
+  background: rgba(15, 44, 95, 0.12);
+  color: #0f2c5f;
 }
 
 .industry-card:hover .card-icon {
@@ -170,23 +185,22 @@
 }
 
 .card-title {
-  font-size: 1.5rem;
+  color: #0f2c5f;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #333;
   margin-bottom: 8px;
 }
 
 .card-subtitle {
-  font-size: 0.95rem;
-  color: #667eea;
-  font-weight: 600;
+  color: #1b75bb;
+  font-size: 0.9rem;
+  font-weight: 800;
   margin-bottom: 15px;
-  font-style: italic;
 }
 
 .card-description {
+  color: #5d6f89;
   font-size: 0.95rem;
-  color: #666;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -196,18 +210,18 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 15px;
-  border-top: 1px solid #e8ecf1;
+  border-top: 1px solid #e6edf7;
 }
 
 .card-stats {
-  font-size: 0.85rem;
-  color: #999;
-  font-weight: 600;
+  color: #0f2c5f;
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .card-arrow {
   font-size: 1.5rem;
-  color: #667eea;
+  color: #1b75bb;
   transition: transform 0.3s ease;
   font-weight: 700;
 }
@@ -219,45 +233,54 @@
 /* CTA Section */
 .industry-cta {
   text-align: center;
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, #0f2c5f 0%, #1b75bb 100%);
+  border-radius: 28px;
+  box-shadow: 0 22px 55px rgba(15, 44, 95, 0.18);
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 38px;
 }
 
 .industry-cta p {
+  color: rgba(255, 255, 255, 0.92);
   font-size: 1.1rem;
-  color: #333;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 .industry-cta-btn {
   display: inline-block;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 15px 40px;
-  border-radius: 8px;
+  background: #ffffff;
+  border-radius: 999px;
+  color: #0f2c5f;
+  padding: 14px 32px;
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 14px 30px rgba(3, 10, 28, 0.18);
 }
 
 .industry-cta-btn:hover {
+  color: #1b75bb;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 18px 38px rgba(3, 10, 28, 0.22);
+}
+
+@media (max-width: 1200px) {
+  .industry-cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .industry-section {
-    padding: 50px 20px;
-    margin: 40px 0;
+    padding: 64px 20px;
   }
 
   .industry-header h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .industry-header p {
@@ -283,7 +306,8 @@
   }
 
   .industry-cta {
-    padding: 30px;
+    border-radius: 22px;
+    padding: 30px 22px;
   }
 
   .industry-cta p {
@@ -293,12 +317,11 @@
 
 @media (max-width: 480px) {
   .industry-section {
-    padding: 30px 15px;
-    margin: 30px 0;
+    padding: 52px 15px;
   }
 
   .industry-header h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   .industry-header p {

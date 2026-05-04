@@ -88,46 +88,49 @@ function Count() {
 
 
   return (
-  <>
-    <div className='container'>
-      <div className="row counter">
-      <div className="col-12 col-md-3">
-        
-      <h1 className='count2'>{count}+</h1>
-      <h2 className='count-title2'>Brands</h2>
-          <p className='count-des2'> Businesses have put their trust in us and for a good reason. 
-            Our expertise and dedication have helped them 
-            achieve unparalleled growth and success. 
-            Let us do the same for you.</p>
-            
+    <section className="counter-section">
+      <div className='container'>
+        <div className="counter-head">
+          <span className="counter-eyebrow">Proven momentum</span>
+          <h2>Numbers that help clients feel confident before they talk to us.</h2>
+          <p>Every project is handled with practical planning, clear communication, and delivery discipline.</p>
+        </div>
+        <div className="row counter-grid">
+          <div className="col-12 col-md-6 col-lg-3">
+            <div className="counter-card">
+              <h3 className='count2'>{count}+</h3>
+              <h4 className='count-title2'>Brands</h4>
+              <p className='count-des2'>Brands trust us to connect strategy, execution, and measurable business outcomes.</p>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3">
+            <div className="counter-card">
+              <h3 className='count2'>{count1}+</h3>
+              <h4 className='count-title2'>Customers</h4>
+              <p className='count-des2'>Customers served through practical digital solutions, talent support, and product delivery.</p>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3">
+            <div className="counter-card">
+              <h3 className='count2'>{count2}+</h3>
+              <h4 className='count-title2'>Experience</h4>
+              <p className='count-des2'>Years of hands-on experience across planning, implementation, launch, and support.</p>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 col-lg-3">
+            <div className="counter-card">
+              <h3 className='count2'>{count3}+</h3>
+              <h4 className='count-title2'>Product Implementations</h4>
+              <p className='count-des2'>Product implementations delivered across industries, from first rollout to optimization.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="col-12 col-md-3">
-      <h2 className='count2'>{count1}+</h2>
-          <h2 className='count-title2'>Customers</h2>
-          <p className='count-des2'>Satisfied customers who have trusted us to provide exceptional service and quality products. 
-            We are committed to your satisfaction and look forward to exceeding your expectations.</p>
-        
+      <div className="count-divider-wrap">
+        <div className="count-divider-line" aria-hidden="true" />
+        <MovingIcon />
       </div>
-      <div className="col-12 col-md-3">
-      <h2 className='count2'>{count2}+</h2>
-          <h2 className='count-title2'>Experience</h2>
-          <p className='count-des2'>Extensive years of expertise in providing end-to-end business solutions. 
-            Whether you need assistance in planning or implementation, 
-            we have the skills to ensure project success.</p>
-      </div>
-      <div className="col-12 col-md-3">
-      <h2 className='count2'>{count3}+</h2>
-          <h2 className='count-title2'>Product Implementations</h2>
-          <p className='count-des2'>RIO solutions successfully implemented for customers across industries, 
-            from first rollout to ongoing optimization of their product stack.</p>
-      </div>
-      </div>
-    </div>
-    <div className="count-divider-wrap">
-      <div className="count-divider-line" aria-hidden="true" />
-      <MovingIcon />
-    </div>
-  </>
+    </section>
   )
 }
 export default Count

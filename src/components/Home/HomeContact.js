@@ -171,14 +171,14 @@ const [formData, setFormData] = useState({
         <div className="contact-layout">
           <div className="headlines">
             <p className="headline-eyebrow">FREE STRATEGY SESSION</p>
-            <h2 className='headline-1'>Talk to an expert</h2>
+            <h2 className='headline-1'>Ready to make your next client say yes?</h2>
             <p className='headline-2'>
-              Looking for the right expertise to grow your business? Share a few details and our team will get back to you with tailored ideas for your goals.
+              Share your goal and we will recommend the right mix of marketing, technology, product, and staffing support to move it forward.
             </p>
             <ul className="contact-highlights">
-              <li>15–20 minute discovery call</li>
+              <li>15-20 minute discovery call</li>
+              <li>Clear next steps for your business goal</li>
               <li>No obligation, no hard sales pitch</li>
-              <li>Actionable recommendations for your business</li>
             </ul>
             <div className="contact-meta">
               <span className="contact-meta-pill">Avg. response time: under 1 business day</span>

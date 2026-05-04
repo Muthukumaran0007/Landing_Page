@@ -1,48 +1,80 @@
 .team_intro {
-    background-color: #ffffff;
-    padding: 28px 56px 56px;
+    background: #ffffff;
+    padding: clamp(54px, 7vw, 92px) 24px 42px;
     max-width: 100%;
+    text-align: center;
+}
+
+.team-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: rgba(27, 117, 187, 0.1);
+    color: #1B75BB;
+    font-size: var(--font-xs);
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
 }
 
 .team_contanier{
     margin-top: 0;
-    background-color: #2a2a2a;
-    background-image: url('../assets/images/App-bg-img.webp');
+    background-color: #071b3f;
+    background-image:
+        linear-gradient(135deg, rgba(7, 27, 63, 0.92), rgba(12, 42, 90, 0.9)),
+        url('../assets/images/App-bg-img.webp');
     background-repeat: repeat;
     background-size: cover;
     height: auto;
     width: 100%;
-    padding: 40px 24px 56px;
+    padding: 54px 24px 68px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team_contanier::before {
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    right: -140px;
+    top: -120px;
+    border-radius: 50%;
+    background: rgba(27, 117, 187, 0.28);
 }
 .team_title{
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     margin-top: 0;
-    color: #1a1a1a;
-    font-weight: 700;
-    font-size: 2.5rem;
+    color: #0F2C5F;
+    font-weight: 800;
+    font-size: clamp(2rem, 4vw, 3.2rem);
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.2;
+    line-height: 1.08;
     letter-spacing: -0.02em;
 }
 .team_des{
-    padding: 0 32px;
+    padding: 0;
     text-align: center;
-    font-size: 19px;
-    line-height: 1.7;
-    color: #333;
+    font-size: var(--font-lg);
+    line-height: 1.65;
+    color: #526173;
     font-weight: 400;
-    max-width: 1200px;
+    max-width: 920px;
     margin: 0 auto;
 }
 .team_contanier:hover{
     margin-top: 0;
-    background-color: #2a2a2a;
-    background-image: url('../assets/images/App-bg-img.webp');
+    background-color: #071b3f;
+    background-image:
+        linear-gradient(135deg, rgba(7, 27, 63, 0.92), rgba(12, 42, 90, 0.9)),
+        url('../assets/images/App-bg-img.webp');
     height: auto;
-    padding: 40px 24px 56px;
+    padding: 54px 24px 68px;
 }
 
 .team_card{
@@ -50,10 +82,12 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 140px;
+    gap: clamp(34px, 8vw, 120px);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Each card: photo + caption */
@@ -68,6 +102,11 @@
     max-width: 240px;
     width: 100%;
     overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+.card__article:hover {
+    transform: translateY(-8px);
 }
 
 /* Photo: soft rounded arch at top, straight sides below */
@@ -82,13 +121,15 @@
     object-position: center top;
     cursor: pointer;
     filter: grayscale(100%);
-    transition: filter 0.4s ease-in-out;
+    transition: filter 0.4s ease-in-out, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
 }
 
 .team_img:hover {
     filter: none;
+    box-shadow: 0 24px 60px rgba(27, 117, 187, 0.28);
 }
 
 /* White caption card: soft rounded corners, floats in front of dark background */
@@ -111,6 +152,7 @@
     align-items: center;
     min-height: 72px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(27, 117, 187, 0.08);
 }
 
 .card_data_overlay {
@@ -152,19 +194,32 @@
 }
 
 @media screen and (max-width: 768px) {
+    .team_intro {
+        padding: 48px 18px 28px;
+    }
+
+    .team_title {
+        font-size: 2rem;
+    }
+
+    .team_des {
+        font-size: var(--font-sm);
+    }
+
     .team_contanier{
-        margin-top: 32px;
+        margin-top: 0;
         /* background-repeat: no-repeat; */
         /* background-image: url('../assets/images/App-bg-img.webp'); */
         /* background-color: #6F3EE9; */
         height: auto;
-        padding-bottom: 30px;
-        width: auto;
+        padding: 40px 18px 48px;
+        width: 100%;
     }
     .team_contanier:hover{
-        margin-top: 32px;
+        margin-top: 0;
         /* background-color: #cfbefb; */
-        height: 1500px;
+        height: auto;
+        padding: 40px 18px 48px;
     }
     .team-member-link,
     .card__article {
@@ -198,8 +253,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 72px;
-        padding: 0 16px;
+        gap: 54px;
+        padding: 0;
     }
 }
     

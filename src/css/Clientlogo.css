@@ -1,67 +1,126 @@
 .client-logo {
-    background-color: white;
-    padding: 20px 0;
+  background: #ffffff;
+  padding: 56px 0 34px;
+  position: relative;
+}
+
+.client-logo-header {
+  max-width: 980px;
+  margin: 0 auto 28px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.client-eyebrow {
+  color: #1B75BB;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.client {
+  color: #10294f;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.client-subtitle {
+  color: #5d6f89;
+  font-size: var(--font-body);
+  margin: 14px auto 0;
+  max-width: 690px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.logo::before,
+.logo::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 110px;
+  z-index: 2;
+}
+
+.logo::before {
+  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0));
+  left: 0;
+}
+
+.logo::after {
+  background: linear-gradient(270deg, #ffffff, rgba(255, 255, 255, 0));
+  right: 0;
+}
+
+@keyframes slid {
+  from {
+    transform: translateX(0);
   }
-  
-  .client {
-    margin-top: 80px;
-    font-weight: 600;
-    text-align: center;
-    font-size: 4vw;
+  to {
+    transform: translateX(-45%);
   }
-  
-  .logo {
-    overflow: hidden;
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.logo-slid {
+  align-items: center;
+  animation: 24s slid linear infinite;
+  display: flex;
+  gap: 22px;
+  width: max-content;
+}
+
+.logo:hover .logo-slid {
+  animation-play-state: paused;
+}
+
+.logo-slid img {
+  background: #ffffff;
+  border: 1px solid rgba(27, 117, 187, 0.1);
+  border-radius: 22px;
+  box-shadow: 0 16px 36px rgba(16, 41, 79, 0.08);
+  height: 112px;
+  margin: 0;
+  object-fit: contain;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 168px;
+}
+
+.logo-slid img:hover {
+  box-shadow: 0 20px 44px rgba(27, 117, 187, 0.16);
+  transform: translateY(-4px) scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .client-logo {
+    padding: 42px 0 26px;
   }
-  
-  @keyframes slid {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-30%);
-    }
+
+  .logo::before,
+  .logo::after {
+    width: 48px;
   }
-  
+
   .logo-slid {
-    display: inline-block;
-    animation: 14s slid  linear infinite;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: calc(3890 * 40px);
+    gap: 14px;
   }
-  
-  .logo:hover .logo-slid {
-    animation-play-state: paused;
-  }
-  
+
   .logo-slid img {
-    height: 150px;
-    margin: 0 20px;
-    transition: transform 0.3s ease;
+    border-radius: 18px;
+    height: 92px;
+    padding: 12px;
+    width: 138px;
   }
-  
-  .logo-slid img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .logo-slid img {
-      height: 120px;
-      margin: 0 15px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .logo-slid img {
-      height: 100px;
-      margin: 0 10px;
-    }
-  }
-  
+}

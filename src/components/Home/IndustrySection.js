@@ -66,8 +66,9 @@ const IndustrySection = () => {
     <section className="industry-section">
       <div className="container">
         <div className="industry-header">
-          <h2>Industry-Specific Solutions</h2>
-          <p>We know your industry. We know your challenges. We know what works.</p>
+          <span className="industry-eyebrow">Built for your market</span>
+          <h2>Industry-specific solutions that clients can say yes to faster</h2>
+          <p>Choose a focused launch path for your business, backed by teams who understand your workflows, customers, and growth targets.</p>
         </div>
 
         <div className="industry-cards-grid">
@@ -92,9 +93,9 @@ const IndustrySection = () => {
         </div>
 
         <div className="industry-cta">
-          <p>Not sure which industry solution is right for you?</p>
+          <p>Not sure which solution fits your business best?</p>
           <Link to="/contact" className="industry-cta-btn">
-            Let's Talk About Your Business
+            Get a Free Recommendation
           </Link>
         </div>
       </div>

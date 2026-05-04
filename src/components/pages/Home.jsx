@@ -1,6 +1,6 @@
 import React from 'react'
 import Homebanner from '../Home/Homebanner'
-import Clientlogo from '../Home/Clientlogo'
+import HomeServices from '../Home/HomeServices'
 import Story from '../Home/Story'
 import Team from '../Home/Team'
 import Count from '../Home/Count'
@@ -49,7 +49,7 @@ function Home() {
       
         <Homebanner/>
         <ClientLogohead/>
-        
+        <HomeServices/>
         <IndustrySection/>
          <Story/> 
           <Count/>    

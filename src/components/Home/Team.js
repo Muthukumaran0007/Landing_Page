@@ -1,8 +1,5 @@
 import React from 'react'
 import '../../css/Team.css';
-import Tony from '../../assets/images/Tony.jpg';
-import Kavith from '../../assets/images/Kavitha.jpg';
-import Shilpa from '../../assets/images/Shilpa.jpg';
 import LazyImage from '../LazyImage';
 
 function Team() {
@@ -34,8 +31,9 @@ function Team() {
   return (
     <div className='col-12'>
         <div className='team_intro'>
-          <h1 className='team_title'>THE TRIO BEHIND RIO’S GROWTH</h1>
-          <p className='team_des'>Meet the powerhouse trio behind Rio Business Solutions - the driving force that made it all possible. Their visionary leadership, financial expertise, and operational excellence have made everything possible, driving success for both our company and clients. Their teamwork is the foundation of Rio’s growth and impact.</p>
+          <p className="team-eyebrow">Leadership you can speak to</p>
+          <h1 className='team_title'>The team behind RioBizSols growth</h1>
+          <p className='team_des'>Work with leaders who understand strategy, finance, operations, and execution. Our leadership team keeps every engagement focused on clarity, accountability, and measurable business outcomes.</p>
         </div>
         <div className='team_contanier'>
           <div className="team_card">
