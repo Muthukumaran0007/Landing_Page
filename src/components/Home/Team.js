@@ -31,9 +31,9 @@ function Team() {
   return (
     <div className='col-12'>
         <div className='team_intro'>
-          <p className="team-eyebrow">People behind the work</p>
-          <h1 className='team_title'>Meet the team guiding RioBizSols</h1>
-          <p className='team_des'>You work with real people who care about clear communication, practical ideas, and work that helps your business move forward.</p>
+          <p className="team-eyebrow">People behind the products</p>
+          <h1 className='team_title'>Meet the team building RioBizSols products</h1>
+          <p className='team_des'>You work with people who understand product planning, operations, finance, and delivery, so your product rollout stays clear and practical.</p>
         </div>
         <div className='team_contanier'>
           <div className="team_card">

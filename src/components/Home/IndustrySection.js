@@ -22,43 +22,43 @@ const IndustrySection = () => {
   const industries = [
     {
       id: 'tech-startup',
-      title: 'Startups',
-      subtitle: 'Launch faster',
-      description: 'Get a website, app, marketing, and hiring support without building a big internal team.',
+      title: 'Asset-heavy companies',
+      subtitle: 'Use RIO ALM',
+      description: 'Track equipment, service history, documents, and maintenance from one organized system.',
       color: 'tech-startup',
-      stats: 'MVP to Series A'
+      stats: 'Assets under control'
     },
     {
       id: 'ecommerce',
-      title: 'Online Stores',
-      subtitle: 'Sell more online',
-      description: 'Improve your store, attract more buyers, and make the buying journey easier.',
+      title: 'Hospitals',
+      subtitle: 'Use RIO MEMS',
+      description: 'Keep medical equipment ready, calibrated, and audit-friendly for safer patient care.',
       color: 'ecommerce',
-      stats: '$100K - $5M+'
+      stats: 'Care-ready devices'
     },
     {
       id: 'manufacturing',
       title: 'Manufacturing',
-      subtitle: 'Work smarter',
-      description: 'Track work, stock, people, and daily operations with simpler digital systems.',
+      subtitle: 'Use RIO ALM',
+      description: 'Reduce downtime by tracking machines, planned service, vendors, and asset usage.',
       color: 'manufacturing',
-      stats: 'Efficiency First'
+      stats: 'Less downtime'
     },
     {
       id: 'healthcare',
-      title: 'Healthcare',
-      subtitle: 'Better patient experience',
-      description: 'Use better websites, systems, and staffing support to serve patients smoothly.',
+      title: 'Professionals',
+      subtitle: 'Use AIssist',
+      description: 'Write better LinkedIn comments and replies faster while keeping your own voice.',
       color: 'healthcare',
-      stats: 'Care-Focused Tech'
+      stats: 'Stay visible'
     },
     {
       id: 'saas',
-      title: 'SaaS',
-      subtitle: 'Grow your product',
-      description: 'Build, market, improve, and support your software business as it scales.',
+      title: 'Recruiters & founders',
+      subtitle: 'Use AIssist',
+      description: 'Save time on LinkedIn outreach, comments, replies, and professional conversations.',
       color: 'saas',
-      stats: 'Seed to Series B+'
+      stats: 'Save time weekly'
     }
   ];
 
@@ -66,9 +66,9 @@ const IndustrySection = () => {
     <section className="industry-section">
       <div className="container">
         <div className="industry-header">
-          <span className="industry-eyebrow">Made for different businesses</span>
-          <h2>Whatever your business type, we help you grow in a practical way.</h2>
-          <p>We understand that every business is different. So we suggest what you actually need instead of pushing a one-size-fits-all package.</p>
+          <span className="industry-eyebrow">Who these products help</span>
+          <h2>Built for teams that want less manual work and more control.</h2>
+          <p>Whether you manage assets, hospital equipment, or LinkedIn engagement, our products are made to simplify daily work.</p>
         </div>
 
         <div className="industry-cards-grid">
@@ -93,9 +93,9 @@ const IndustrySection = () => {
         </div>
 
         <div className="industry-cta">
-          <p>Not sure what your business needs first?</p>
+          <p>Not sure which product fits your requirement?</p>
           <Link to="/contact" className="industry-cta-btn">
-            Ask for a Free Recommendation
+            Ask for Product Guidance
           </Link>
         </div>
       </div>

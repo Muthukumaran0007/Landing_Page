@@ -10,6 +10,7 @@ const [formData, setFormData] = useState({
     firstname: '',
     email: '',
     phone: '',
+    product: '',
     message: '',
   });
 
@@ -100,10 +101,13 @@ const [formData, setFormData] = useState({
     try {
       visitorTracking.trackFormSubmission('home_contact', formData);
       const apiBase = getApiBaseUrl();
-      const response = await axios.post(`${apiBase}/send-email`, formData);
+      const response = await axios.post(`${apiBase}/send-email`, {
+        ...formData,
+        message: `Interested product: ${formData.product || 'Not specified'}\n\n${formData.message}`
+      });
       if (response.data.success) {
         setSubmitStatus('success');
-        setFormData({ firstname: '', email: '', phone: '', message: '' });
+        setFormData({ firstname: '', email: '', phone: '', product: '', message: '' });
       } else {
         setSubmitStatus('error');
       }
@@ -170,14 +174,14 @@ const [formData, setFormData] = useState({
       <div className="contact-form">
         <div className="contact-layout">
           <div className="headlines">
-            <p className="headline-eyebrow">FREE BUSINESS CONSULTATION</p>
-            <h2 className='headline-1'>Tell us what you need. We will show you the next step.</h2>
+            <p className="headline-eyebrow">FREE PRODUCT CONSULTATION</p>
+            <h2 className='headline-1'>Want to see which RIO product fits your business?</h2>
             <p className='headline-2'>
-              Want more enquiries, a better website, an app, hiring support, or a smoother business system? Share a few details and we will guide you.
+              Tell us about your work. We will show whether RIO ALM, RIO MEMS, or AIssist is the right fit and what the next step looks like.
             </p>
             <ul className="contact-highlights">
-              <li>Short 15-20 minute call</li>
-              <li>Simple suggestions for your business</li>
+              <li>Short 15-20 minute product discussion</li>
+              <li>Simple recommendation based on your needs</li>
               <li>No pressure, no confusing technical talk</li>
             </ul>
             <div className="contact-meta">
@@ -187,7 +191,7 @@ const [formData, setFormData] = useState({
           <div className="main-form">
             <form onSubmit={handleSubmit}>
             <div className={`form-group ${errors.firstname ? 'error' : ''}`}>
-              <label htmlFor="name">Enter your name <span>*</span></label>
+              <label htmlFor="firstname">Enter your name <span>*</span></label>
               <input
                 type="text"
                 id="firstname"
@@ -242,6 +246,21 @@ const [formData, setFormData] = useState({
               {errors.phone && <span className="error-message">{errors.phone}</span>}
             </div>
 
+            <div className="form-group">
+              <label htmlFor="product">Product you are interested in</label>
+              <select
+                id="product"
+                name="product"
+                value={formData.product}
+                onChange={handleChange}
+              >
+                <option value="">Not sure yet</option>
+                <option value="RIO ALM">RIO ALM - Asset Lifecycle Management</option>
+                <option value="RIO MEMS">RIO MEMS - Medical Equipment Maintenance</option>
+                <option value="AIssist">AIssist - LinkedIn Engagement Assistant</option>
+              </select>
+            </div>
+
            {/* <div className={`form-group ${errors.company ? 'error' : ''}`}>
               <label htmlFor="company">Company name <span>*</span></label>
               <input
@@ -277,7 +296,7 @@ const [formData, setFormData] = useState({
             )}
 
             <button className="s-btn" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Get My Free Consultation'}
+              {isSubmitting ? 'Sending...' : 'Get My Product Recommendation'}
             </button>
             </form>
           </div>

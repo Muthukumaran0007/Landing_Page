@@ -91,37 +91,37 @@ function Count() {
     <section className="counter-section">
       <div className='container'>
         <div className="counter-head">
-          <span className="counter-eyebrow">Proof you can trust</span>
-          <h2>Real businesses have trusted us to help them move forward.</h2>
-          <p>We keep the work clear, practical, and easy to follow from the first call to final delivery.</p>
+          <span className="counter-eyebrow">Product confidence</span>
+          <h2>Built by a team that understands software, support, and real operations.</h2>
+          <p>Our products are created for teams that need control, clarity, and less manual follow-up.</p>
         </div>
         <div className="row counter-grid">
           <div className="col-12 col-md-6 col-lg-3">
             <div className="counter-card">
               <h3 className='count2'>{count}+</h3>
               <h4 className='count-title2'>Brands</h4>
-              <p className='count-des2'>Businesses trust us to improve their online presence, systems, hiring, and growth.</p>
+              <p className='count-des2'>Businesses and teams have trusted RioBizSols for practical digital solutions.</p>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-3">
             <div className="counter-card">
               <h3 className='count2'>{count1}+</h3>
               <h4 className='count-title2'>Customers</h4>
-              <p className='count-des2'>Clients served with websites, marketing, apps, staffing, and useful business tools.</p>
+              <p className='count-des2'>Customers served across products, services, implementation, and support.</p>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-3">
             <div className="counter-card">
               <h3 className='count2'>{count2}+</h3>
               <h4 className='count-title2'>Experience</h4>
-              <p className='count-des2'>Years of hands-on work helping businesses plan, launch, improve, and grow.</p>
+              <p className='count-des2'>Years of hands-on work building systems for business and operational needs.</p>
             </div>
           </div>
           <div className="col-12 col-md-6 col-lg-3">
             <div className="counter-card">
               <h3 className='count2'>{count3}+</h3>
-              <h4 className='count-title2'>Projects Delivered</h4>
-              <p className='count-des2'>Solutions delivered for different industries, from first setup to ongoing improvement.</p>
+              <h4 className='count-title2'>Product Implementations</h4>
+              <p className='count-des2'>Product and system rollouts supported from first setup to ongoing improvement.</p>
             </div>
           </div>
         </div>

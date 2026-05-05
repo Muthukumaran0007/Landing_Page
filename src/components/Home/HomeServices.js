@@ -9,50 +9,36 @@ import {Link} from 'react-router-dom';
 function Services() {
   const services = [
     {
-      title: 'Get more people to notice you',
-      description: 'We help your business show up online, look trustworthy, and bring in more enquiries through ads, SEO, branding, and content.',
+      title: 'RIO ALM',
+      description: 'A complete asset management product for companies that need to track equipment, maintenance, documents, vendors, and asset value in one place.',
       image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599907/rio_main_website/m0v93zn1r5ehnqamqhpc.png',
-      path: '/our-service/digital-marketing/',
-      outcome: 'Marketing'
-    },
-    {
-      title: 'Make your website look premium',
-      description: 'We build clean, fast, mobile-friendly websites that explain your business clearly and make it easy for visitors to contact you.',
-      image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599928/rio_main_website/m4cliid7bj5sx10flesg.png',
-      path: '/our-service/web-development',
-      outcome: 'Websites'
-    },
-    {
-      title: 'Build the app your idea needs',
-      description: 'Have an app idea or need software for your team? We design and build apps that are simple to use and ready for real customers.',
-      image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599890/rio_main_website/bwa6k62zz3jvvfb8wsbx.png',
-      path: '/our-service/app-development',
-      outcome: 'Apps'
-    },
-    {
-      title: 'Find the right people faster',
-      description: 'We help you hire the right talent for short-term, long-term, direct hiring, and business support roles without wasting time.',
-      image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599940/rio_main_website/zsmbw34rfoookdmgmcpv.png',
-      path: '/our-service/staffing',
-      outcome: 'Hiring'
-    },
-    {
-      title: 'Manage your business assets better',
-      description: 'RIO ALM helps companies track equipment, maintenance, compliance, and asset usage from one organized system.',
-      image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599928/rio_main_website/m4cliid7bj5sx10flesg.png',
       path: '/products/rio-alm',
-      outcome: 'Asset system'
+      outcome: 'Asset Lifecycle Management'
+    },
+    {
+      title: 'RIO MEMS',
+      description: 'A medical equipment maintenance system for hospitals to manage biomedical devices, service schedules, calibration, breakdowns, and audit records.',
+      image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599928/rio_main_website/m4cliid7bj5sx10flesg.png',
+      path: '/products/medical-equipment-maintenance',
+      outcome: 'Hospital Equipment Maintenance'
+    },
+    {
+      title: 'AIssist',
+      description: 'A LinkedIn assistant that helps founders, recruiters, students, and professionals write better comments, replies, and messages faster.',
+      image: 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599890/rio_main_website/bwa6k62zz3jvvfb8wsbx.png',
+      path: '/products/aissist',
+      outcome: 'LinkedIn Engagement Assistant'
     }
   ];
 
   return (
-    <section className='service'>
+    <section className='service' id="products">
       <div className="service-shell">
         <div className="service-header">
-          <p className="service-eyebrow">What we can do for you</p>
-          <h2 className='title'>One team for your website, marketing, app, hiring, and business systems</h2>
+          <p className="service-eyebrow">Our main products</p>
+          <h2 className='title'>Three focused products built to solve real business problems</h2>
           <p className='subtitle-homeser'>
-            You do not have to talk to many different agencies. Tell us your goal, and we will show you what will help first.
+            Whether you manage company assets, hospital equipment, or LinkedIn engagement, RioBizSols has a product made for that exact need.
           </p>
         </div>
 
@@ -69,7 +55,7 @@ function Services() {
               <p className='descrip_para'>{service.description}</p>
               <Divider className="service-card-divider" />
               <span className='service-card-footer'>
-                See how it helps <span className="service-arrow" aria-hidden="true">→</span>
+                View product <span className="service-arrow" aria-hidden="true">→</span>
               </span>
             </Link>
           ))}

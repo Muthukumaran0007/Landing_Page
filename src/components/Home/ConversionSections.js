@@ -7,37 +7,37 @@ import '../../css/ConversionSections.css';
 function ConversionSections() {
   const outcomes = [
     {
-      title: 'People understand you quickly',
-      text: 'Your visitors can see what you offer, why it matters, and how to contact you without confusion.'
+      title: 'RIO ALM keeps assets under control',
+      text: 'Know where every asset is, when service is due, which documents are ready, and what needs attention.'
     },
     {
-      title: 'Your business looks more trustworthy',
-      text: 'A clean website, clear message, and strong visuals help people feel confident before they call.'
+      title: 'RIO MEMS keeps hospital equipment ready',
+      text: 'Biomedical teams can track medical devices, maintenance, calibration, incidents, and audit records in one place.'
     },
     {
-      title: 'You get support after the first enquiry',
-      text: 'We can help with marketing, website changes, app work, hiring, and follow-up systems as you grow.'
+      title: 'AIssist saves time on LinkedIn',
+      text: 'Professionals can write better comments, replies, and messages faster while keeping their own tone.'
     }
   ];
 
   const steps = [
-    'Tell us what you want: more leads, a better website, an app, hiring help, or business systems.',
-    'We suggest the easiest and most useful next steps for your budget and business stage.',
-    'Our team helps you build, promote, improve, and manage it with clear updates.'
+    'Tell us your industry, team size, and the problem you want to solve.',
+    'We help you choose the right product: RIO ALM, RIO MEMS, or AIssist.',
+    'We walk you through the product, answer questions, and guide the next step.'
   ];
 
   const faqs = [
     {
-      question: 'I am not technical. Can you still help me?',
-      answer: 'Yes. You only need to explain your business goal. We will suggest the right website, marketing, app, staffing, or system support in simple terms.'
+      question: 'Which product is right for my business?',
+      answer: 'If you manage physical assets, start with RIO ALM. If you are a hospital or healthcare provider, look at RIO MEMS. If you want better LinkedIn engagement, try AIssist.'
     },
     {
-      question: 'Can this help if I am running ads?',
-      answer: 'Yes. The page is built so people who click your ads quickly understand your offer and know how to contact you.'
+      question: 'Can I see a demo before deciding?',
+      answer: 'Yes. You can request a product walkthrough and our team will show how the product works for your use case.'
     },
     {
       question: 'What happens after I submit the form?',
-      answer: 'Our team will review your details and contact you with practical ideas for the next step. No pressure, no confusing talk.'
+      answer: 'Our team will review your requirement and contact you with the right product recommendation and next steps.'
     }
   ];
 
@@ -46,11 +46,11 @@ function ConversionSections() {
       <section className="conversion-strip" aria-label="RioBizSols campaign outcomes">
         <div className="conversion-strip-inner">
           <div>
-            <span className="conversion-strip-label">Made for ads and real enquiries</span>
-            <h2>When people click your ad, they should instantly know why to contact you.</h2>
+            <span className="conversion-strip-label">Three focused products</span>
+            <h2>Choose the product that solves your biggest daily problem.</h2>
           </div>
           <p>
-            We make your online presence clear, attractive, and easy to understand so visitors do not leave confused.
+            Whether you manage business assets, hospital equipment, or LinkedIn engagement, RioBizSols has a product built for that exact need.
           </p>
         </div>
       </section>
@@ -58,10 +58,10 @@ function ConversionSections() {
       <section className="conversion-section">
         <div className="conversion-container">
           <div className="conversion-header">
-            <span className="conversion-eyebrow">Why this works</span>
-            <h2>A simple landing page structure that helps people trust you faster.</h2>
+            <span className="conversion-eyebrow">Why clients care</span>
+            <h2>Our products are made to reduce confusion, manual work, and daily follow-up stress.</h2>
             <p>
-              The page is built around the questions every customer has: What do you do? Can I trust you? How can you help me? What should I do next?
+              Each product focuses on a real problem: asset control, hospital equipment maintenance, or faster professional communication.
             </p>
           </div>
 
@@ -79,13 +79,13 @@ function ConversionSections() {
 
           <div className="conversion-process">
             <div className="conversion-process-copy">
-              <span className="conversion-eyebrow">How we work</span>
-              <h2>No complicated process. Just clear steps.</h2>
+              <span className="conversion-eyebrow">How to get started</span>
+              <h2>Pick a product, see how it works, and decide with clarity.</h2>
               <p>
-                You tell us your goal. We explain what will help. Then we work with you to make it happen.
+                You do not need to understand every technical detail. Tell us your problem, and we will show the product that fits.
               </p>
               <Link to="/contact" className="conversion-process-cta">
-                Talk to our team <ArrowCircleRightIcon />
+                Ask for product guidance <ArrowCircleRightIcon />
               </Link>
             </div>
             <div className="conversion-step-list">
@@ -103,8 +103,8 @@ function ConversionSections() {
       <section className="faq-section">
         <div className="conversion-container faq-layout">
           <div className="faq-copy">
-            <span className="conversion-eyebrow">Quick answers</span>
-            <h2>Simple answers before you contact us.</h2>
+            <span className="conversion-eyebrow">Quick product answers</span>
+            <h2>Simple answers before you book a demo.</h2>
           </div>
           <div className="faq-list">
             {faqs.map((faq) => (

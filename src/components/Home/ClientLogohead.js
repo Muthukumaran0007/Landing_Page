@@ -28,8 +28,8 @@ function Clientlogohead() {
     <div className='client-logo'>
       <div className="client-logo-header">
         <p className="client-eyebrow">Trusted by businesses</p>
-        <h1 className='client'>Businesses have trusted RioBizSols to help them move forward</h1>
-        <p className="client-subtitle">From websites and marketing to hiring and business tools, we support teams that want practical growth help.</p>
+        <h1 className='client'>Products built by a team businesses already trust</h1>
+        <p className="client-subtitle">RioBizSols combines product thinking, implementation support, and practical business understanding across RIO ALM, RIO MEMS, and AIssist.</p>
       </div>
         <div className='logo'>
         <div className='logo-slid'>
