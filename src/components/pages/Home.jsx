@@ -7,6 +7,7 @@ import Count from '../Home/Count'
 import ClientLogohead from '../Home/ClientLogohead'
 import HomeContact from '../Home/HomeContact'
 import IndustrySection from '../Home/IndustrySection'
+import ConversionSections from '../Home/ConversionSections'
 import { Helmet } from 'react-helmet-async';
 
 
@@ -49,6 +50,7 @@ function Home() {
       
         <Homebanner/>
         <ClientLogohead/>
+        <ConversionSections/>
         <HomeServices/>
         <IndustrySection/>
          <Story/> 

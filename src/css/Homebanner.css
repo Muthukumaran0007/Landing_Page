@@ -9,9 +9,9 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 680px;
+  min-height: 720px;
   margin: 0;
-  padding: 78px 0 92px;
+  padding: 86px 0 96px;
   background:
     radial-gradient(circle at 88% 18%, rgba(43, 64, 221, 0.16) 0, rgba(43, 64, 221, 0) 30%),
     radial-gradient(circle at 8% 12%, rgba(27, 117, 187, 0.18) 0, rgba(27, 117, 187, 0) 28%),
@@ -151,6 +151,13 @@
   margin-top: 34px;
 }
 
+.hero-action-note {
+  color: #4f6b86;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin: 12px 0 0;
+}
+
 .banner .get-started,
 .hero-secondary-link {
   display: inline-flex;
@@ -247,6 +254,16 @@
   overflow: hidden;
   border-radius: 28px;
   background: linear-gradient(145deg, #ffffff 0%, #eef7ff 100%);
+}
+
+.hero-visual-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0), rgba(15,44,95,0.08)),
+    radial-gradient(circle at 82% 18%, rgba(27,117,187,0.18), transparent 24%);
+  pointer-events: none;
 }
 
 .homebanner-img {

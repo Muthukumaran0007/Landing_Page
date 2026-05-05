@@ -41,6 +41,7 @@
     display: flex;
     align-items: stretch;
     gap: 56px;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
   }
@@ -166,6 +167,20 @@
     box-shadow: 0 28px 70px rgba(4, 22, 55, 0.32);
     border: 1px solid rgba(255, 255, 255, 0.9);
   }
+
+  .form-title {
+    color: #0F2C5F;
+    font-size: 1.45rem;
+    font-weight: 800;
+    margin: 0 0 6px;
+  }
+
+  .form-subtitle {
+    color: #607189;
+    font-size: var(--font-sm);
+    line-height: 1.5;
+    margin: 0 0 22px;
+  }
   
   .form-group {
     margin-bottom: 18px;
@@ -262,14 +277,14 @@
     position: relative;
     text-align: center;
     transition: all 0.3s ease;
-    background: linear-gradient(135deg, #1B75BB 0%, #0D5A9E 100%);
+    background: linear-gradient(135deg, #1B75BB 0%, #2B40DD 100%);
     border-color: transparent;
     color: #fff;
     border-radius: 999px;
     border-style: solid;
     border-width: 0;
     font-size: var(--font-body-sm);
-    padding: 12px 28px;
+    padding: 14px 28px;
     letter-spacing: 0.5px;
     box-shadow: 0 4px 15px rgba(27, 117, 187, 0.3);
   }

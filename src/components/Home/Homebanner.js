@@ -7,11 +7,11 @@ import CheckIcon from '@mui/icons-material/Check';
 
 function Homebanner() {
   const imageUrl = "//res.cloudinary.com/dhzg3dnfc/image/upload/v1732599895/rio_main_website/u9grcwa3mm6fz6e816nn.png";
-  const proofPoints = ['Staffing support', 'Web & app development', 'Digital marketing', 'RIO ALM systems'];
+  const proofPoints = ['Ad-ready offer', 'Mobile-first experience', 'Clear conversion path', 'One delivery team'];
   const metrics = [
     { value: '50+', label: 'Brands supported' },
-    { value: '100+', label: 'Happy customers' },
-    { value: '20+', label: 'Product rollouts' }
+    { value: '100+', label: 'Customer relationships' },
+    { value: '24h', label: 'Fast response window' }
   ];
 
   return (
@@ -20,12 +20,12 @@ function Homebanner() {
         <div className="container">
           <div className="row homebanner-row">
             <div className="col-lg-7 col-12 homebanner-text-col">
-              <p className="hero-eyebrow">Business growth partners for modern teams</p>
+              <p className="hero-eyebrow">Ad-ready growth partner for serious businesses</p>
               <h1 className="homebanner-title">
-                Build, market, staff, and scale with <span className="hero-highlight">one trusted partner.</span>
+                Turn ad clicks into <span className="hero-highlight">qualified leads</span> with one trusted growth team.
               </h1>
               <p className="homebanner-des">
-                RioBizSols brings strategy, technology, marketing, and talent together so your business can move faster from idea to measurable growth.
+                RioBizSols helps you build the right digital presence, marketing engine, product systems, and talent support so paid traffic lands on a page that feels credible, clear, and ready to convert.
               </p>
               <ul className="hero-proof-list" aria-label="RioBizSols services">
                 {proofPoints.map((point) => (
@@ -37,12 +37,13 @@ function Homebanner() {
               </ul>
               <div className="hero-actions">
                 <Link to="/contact" className="get-started">
-                  Book a free strategy call <ArrowCircleRightIcon />
+                  Get a free growth plan <ArrowCircleRightIcon />
                 </Link>
                 <Link to="/our-service" className="hero-secondary-link">
                   Explore services
                 </Link>
               </div>
+              <p className="hero-action-note">Built for ad visitors who need clarity fast: what you do, why it matters, and how to get started.</p>
               <div className="hero-trust-row" aria-label="RioBizSols business proof">
                 {metrics.map((metric) => (
                   <div className="hero-trust-card" key={metric.label}>
@@ -66,13 +67,13 @@ function Homebanner() {
                 <div className="hero-floating-card">
                   <span className="hero-floating-icon"><CheckIcon /></span>
                   <div>
-                    <p className="hero-floating-title">Client-ready delivery</p>
-                    <p className="hero-floating-text">Strategy to execution under one roof</p>
+                    <p className="hero-floating-title">Click-to-call clarity</p>
+                    <p className="hero-floating-text">A focused path from first visit to consultation</p>
                   </div>
                 </div>
                 <div className="hero-stack-card">
-                  <p className="hero-stack-title">Growth systems</p>
-                  <p className="hero-stack-text">Teams, products, marketing, and support aligned.</p>
+                  <p className="hero-stack-title">Campaign-ready stack</p>
+                  <p className="hero-stack-text">Offer, page, service, and follow-up aligned.</p>
                   <div className="hero-stack-bars" aria-hidden="true">
                     <span />
                     <span />
