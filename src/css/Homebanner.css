@@ -197,6 +197,7 @@
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(27, 117, 187, 0.18);
   box-shadow: 0 12px 30px rgba(27, 117, 187, 0.1);
+  scroll-behavior: smooth;
 }
 
 .hero-secondary-link:hover {
@@ -269,8 +270,11 @@
 .homebanner-img {
   display: block;
   width: 100%;
-  height: auto;
+  min-height: 360px;
+  height: 360px;
   margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-floating-card {

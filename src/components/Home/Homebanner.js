@@ -4,9 +4,9 @@ import LazyImage from '../LazyImage';
 import '../../css/Homebanner.css';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import CheckIcon from '@mui/icons-material/Check';
+import RioAlmDashboard from '../../assets/images/rio-alm-dashboard f.png';
 
 function Homebanner() {
-  const imageUrl = "//res.cloudinary.com/dhzg3dnfc/image/upload/v1732599895/rio_main_website/u9grcwa3mm6fz6e816nn.png";
   const proofPoints = ['Asset management', 'Hospital equipment care', 'LinkedIn growth assistant', 'Demo-ready products'];
   const metrics = [
     { value: '3', label: 'Focused products' },
@@ -56,13 +56,13 @@ function Homebanner() {
             <div className="col-lg-5 col-12 homebanner-img-col">
               <div className="hero-visual-panel">
                 <div className="hero-visual-card">
-                <LazyImage
-                  src={imageUrl}
-                  alt="RIOBizSols business solutions dashboard illustration"
-                  className="homebanner-img"
-                  width={600}
-                  height={400}
-                />
+                  <LazyImage
+                    src={RioAlmDashboard}
+                    alt="RIO ALM product dashboard preview"
+                    className="homebanner-img"
+                    width={600}
+                    height={400}
+                  />
                 </div>
                 <div className="hero-floating-card">
                   <span className="hero-floating-icon"><CheckIcon /></span>
