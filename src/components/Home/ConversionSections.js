@@ -7,37 +7,37 @@ import '../../css/ConversionSections.css';
 function ConversionSections() {
   const outcomes = [
     {
-      title: 'Campaigns that bring better leads',
-      text: 'SEO, paid ads, branding, and content aligned around enquiries, not vanity numbers.'
+      title: 'People understand you quickly',
+      text: 'Your visitors can see what you offer, why it matters, and how to contact you without confusion.'
     },
     {
-      title: 'Websites that convert visitors',
-      text: 'Fast, responsive pages with clear structure, premium visuals, and a strong enquiry path.'
+      title: 'Your business looks more trustworthy',
+      text: 'A clean website, clear message, and strong visuals help people feel confident before they call.'
     },
     {
-      title: 'Teams that help you execute',
-      text: 'Staffing and delivery support so your marketing, tech, and operations keep moving.'
+      title: 'You get support after the first enquiry',
+      text: 'We can help with marketing, website changes, app work, hiring, and follow-up systems as you grow.'
     }
   ];
 
   const steps = [
-    'We understand your goal, audience, budget, and current business stage.',
-    'We recommend the right mix of website, marketing, staffing, or product support.',
-    'We execute with clear milestones, responsive communication, and measurable outcomes.'
+    'Tell us what you want: more leads, a better website, an app, hiring help, or business systems.',
+    'We suggest the easiest and most useful next steps for your budget and business stage.',
+    'Our team helps you build, promote, improve, and manage it with clear updates.'
   ];
 
   const faqs = [
     {
-      question: 'Is this suitable for ads and lead generation?',
-      answer: 'Yes. The page is structured for paid traffic with a clear offer, quick proof, focused CTAs, and a simple contact path.'
+      question: 'I am not technical. Can you still help me?',
+      answer: 'Yes. You only need to explain your business goal. We will suggest the right website, marketing, app, staffing, or system support in simple terms.'
     },
     {
-      question: 'Can RioBizSols handle multiple business needs together?',
-      answer: 'Yes. We support digital marketing, web and app development, staffing, and product systems under one coordinated delivery approach.'
+      question: 'Can this help if I am running ads?',
+      answer: 'Yes. The page is built so people who click your ads quickly understand your offer and know how to contact you.'
     },
     {
       question: 'What happens after I submit the form?',
-      answer: 'Our team reviews your details and reaches out with practical recommendations for your business goal.'
+      answer: 'Our team will review your details and contact you with practical ideas for the next step. No pressure, no confusing talk.'
     }
   ];
 
@@ -46,11 +46,11 @@ function ConversionSections() {
       <section className="conversion-strip" aria-label="RioBizSols campaign outcomes">
         <div className="conversion-strip-inner">
           <div>
-            <span className="conversion-strip-label">Ad-ready growth partner</span>
-            <h2>Turn ad clicks into serious business conversations.</h2>
+            <span className="conversion-strip-label">Made for ads and real enquiries</span>
+            <h2>When people click your ad, they should instantly know why to contact you.</h2>
           </div>
           <p>
-            Visitors from ads need instant clarity. This landing page now explains what you do, why clients should trust you, and how to take action without confusion.
+            We make your online presence clear, attractive, and easy to understand so visitors do not leave confused.
           </p>
         </div>
       </section>
@@ -58,10 +58,10 @@ function ConversionSections() {
       <section className="conversion-section">
         <div className="conversion-container">
           <div className="conversion-header">
-            <span className="conversion-eyebrow">What clients get</span>
-            <h2>Built like an industry-grade website, focused like a campaign landing page.</h2>
+            <span className="conversion-eyebrow">Why this works</span>
+            <h2>A simple landing page structure that helps people trust you faster.</h2>
             <p>
-              Every section supports one goal: help your visitor understand the value quickly and contact RioBizSols with confidence.
+              The page is built around the questions every customer has: What do you do? Can I trust you? How can you help me? What should I do next?
             </p>
           </div>
 
@@ -79,13 +79,13 @@ function ConversionSections() {
 
           <div className="conversion-process">
             <div className="conversion-process-copy">
-              <span className="conversion-eyebrow">Simple process</span>
-              <h2>From first click to clear next step.</h2>
+              <span className="conversion-eyebrow">How we work</span>
+              <h2>No complicated process. Just clear steps.</h2>
               <p>
-                A client should never feel lost after clicking your ad. The page now gives them a guided path from your promise to a low-friction consultation.
+                You tell us your goal. We explain what will help. Then we work with you to make it happen.
               </p>
               <Link to="/contact" className="conversion-process-cta">
-                Start with a free consultation <ArrowCircleRightIcon />
+                Talk to our team <ArrowCircleRightIcon />
               </Link>
             </div>
             <div className="conversion-step-list">
@@ -104,7 +104,7 @@ function ConversionSections() {
         <div className="conversion-container faq-layout">
           <div className="faq-copy">
             <span className="conversion-eyebrow">Quick answers</span>
-            <h2>Questions ad visitors usually ask before contacting you.</h2>
+            <h2>Simple answers before you contact us.</h2>
           </div>
           <div className="faq-list">
             {faqs.map((faq) => (

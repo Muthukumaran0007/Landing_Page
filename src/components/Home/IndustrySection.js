@@ -22,41 +22,41 @@ const IndustrySection = () => {
   const industries = [
     {
       id: 'tech-startup',
-      title: 'Tech Startups',
-      subtitle: 'From Idea to Funded',
-      description: 'Fast development, growth hacking, and flexible staffing for rapid scaling.',
+      title: 'Startups',
+      subtitle: 'Launch faster',
+      description: 'Get a website, app, marketing, and hiring support without building a big internal team.',
       color: 'tech-startup',
       stats: 'MVP to Series A'
     },
     {
       id: 'ecommerce',
-      title: 'E-commerce',
-      subtitle: 'Sell More. Run Smoother.',
-      description: 'Beautiful websites, smart marketing, and systems that don\'t slow you down.',
+      title: 'Online Stores',
+      subtitle: 'Sell more online',
+      description: 'Improve your store, attract more buyers, and make the buying journey easier.',
       color: 'ecommerce',
       stats: '$100K - $5M+'
     },
     {
       id: 'manufacturing',
       title: 'Manufacturing',
-      subtitle: 'Digital Transformation',
-      description: 'Real-time production tracking, inventory management, and compliance automation.',
+      subtitle: 'Work smarter',
+      description: 'Track work, stock, people, and daily operations with simpler digital systems.',
       color: 'manufacturing',
       stats: 'Efficiency First'
     },
     {
       id: 'healthcare',
       title: 'Healthcare',
-      subtitle: 'Modern Systems',
-      description: 'HIPAA-compliant practice management, staffing, and patient engagement.',
+      subtitle: 'Better patient experience',
+      description: 'Use better websites, systems, and staffing support to serve patients smoothly.',
       color: 'healthcare',
       stats: 'Care-Focused Tech'
     },
     {
       id: 'saas',
       title: 'SaaS',
-      subtitle: 'Build Better. Faster.',
-      description: 'Product velocity, growth metrics, and operational systems that scale.',
+      subtitle: 'Grow your product',
+      description: 'Build, market, improve, and support your software business as it scales.',
       color: 'saas',
       stats: 'Seed to Series B+'
     }
@@ -66,9 +66,9 @@ const IndustrySection = () => {
     <section className="industry-section">
       <div className="container">
         <div className="industry-header">
-          <span className="industry-eyebrow">Built for your market</span>
-          <h2>Industry-specific solutions that clients can say yes to faster</h2>
-          <p>Choose a focused launch path for your business, backed by teams who understand your workflows, customers, and growth targets.</p>
+          <span className="industry-eyebrow">Made for different businesses</span>
+          <h2>Whatever your business type, we help you grow in a practical way.</h2>
+          <p>We understand that every business is different. So we suggest what you actually need instead of pushing a one-size-fits-all package.</p>
         </div>
 
         <div className="industry-cards-grid">
@@ -93,9 +93,9 @@ const IndustrySection = () => {
         </div>
 
         <div className="industry-cta">
-          <p>Not sure which solution fits your business best?</p>
+          <p>Not sure what your business needs first?</p>
           <Link to="/contact" className="industry-cta-btn">
-            Get a Free Recommendation
+            Ask for a Free Recommendation
           </Link>
         </div>
       </div>

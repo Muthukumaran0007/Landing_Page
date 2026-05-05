@@ -27,9 +27,9 @@ function Clientlogohead() {
   return (
     <div className='client-logo'>
       <div className="client-logo-header">
-        <p className="client-eyebrow">Trusted by growing teams</p>
-        <h1 className='client'>Brands that have moved forward with RioBizSols</h1>
-        <p className="client-subtitle">A quick look at businesses that trusted us for strategy, technology, marketing, and execution.</p>
+        <p className="client-eyebrow">Trusted by businesses</p>
+        <h1 className='client'>Businesses have trusted RioBizSols to help them move forward</h1>
+        <p className="client-subtitle">From websites and marketing to hiring and business tools, we support teams that want practical growth help.</p>
       </div>
         <div className='logo'>
         <div className='logo-slid'>

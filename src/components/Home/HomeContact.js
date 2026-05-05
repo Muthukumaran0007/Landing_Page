@@ -170,15 +170,15 @@ const [formData, setFormData] = useState({
       <div className="contact-form">
         <div className="contact-layout">
           <div className="headlines">
-            <p className="headline-eyebrow">FREE GROWTH CONSULTATION</p>
-            <h2 className='headline-1'>Turn your ad click into a clear growth plan.</h2>
+            <p className="headline-eyebrow">FREE BUSINESS CONSULTATION</p>
+            <h2 className='headline-1'>Tell us what you need. We will show you the next step.</h2>
             <p className='headline-2'>
-              Share your goal and we will map the right mix of marketing, website, app, product, and staffing support to move it forward.
+              Want more enquiries, a better website, an app, hiring support, or a smoother business system? Share a few details and we will guide you.
             </p>
             <ul className="contact-highlights">
-              <li>15-20 minute consultation with practical recommendations</li>
-              <li>Clear next steps for leads, launch, hiring, or operations</li>
-              <li>No obligation and no hard sales pitch</li>
+              <li>Short 15-20 minute call</li>
+              <li>Simple suggestions for your business</li>
+              <li>No pressure, no confusing technical talk</li>
             </ul>
             <div className="contact-meta">
               <span className="contact-meta-pill">Avg. response time: under 1 business day</span>
@@ -277,7 +277,7 @@ const [formData, setFormData] = useState({
             )}
 
             <button className="s-btn" type="submit" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Get My Free Growth Plan'}
+              {isSubmitting ? 'Sending...' : 'Get My Free Consultation'}
             </button>
             </form>
           </div>

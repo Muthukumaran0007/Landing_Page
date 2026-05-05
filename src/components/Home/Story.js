@@ -6,20 +6,20 @@ function Story() {
   const storyImage = 'https://res.cloudinary.com/dhzg3dnfc/image/upload/v1732599931/rio_main_website/iadzqmfi8a7fjcloukmg.webp';
   const highlights = [
     {
-      title: 'Single growth partner',
-      text: 'Strategy, technology, marketing, and staffing coordinated in one place.'
+      title: 'One team for everything',
+      text: 'No need to manage different people for website, ads, app, and hiring.'
     },
     {
-      title: 'Client-ready execution',
-      text: 'Clear planning, premium delivery, and launch support from start to finish.'
+      title: 'Clear plan before work starts',
+      text: 'You know what we are doing, why we are doing it, and what comes next.'
     },
     {
-      title: 'Built to scale',
-      text: 'Solutions shaped around your market, team, budget, and long-term goals.'
+      title: 'Built for real business use',
+      text: 'We create practical solutions your team and customers can actually use.'
     },
     {
-      title: 'Outcome focused',
-      text: 'Every recommendation is tied to visibility, efficiency, revenue, or growth.'
+      title: 'Focused on results',
+      text: 'Every idea is linked to more visibility, more leads, better work, or easier growth.'
     }
   ];
 
@@ -29,10 +29,10 @@ function Story() {
         <div className="row story-layout">
           <div className="col-lg-6">
             <div className="story-copy">
-            <span className="story-eyebrow">Why clients choose RioBizSols</span>
-            <h2 className="story-title">We turn business ideas into measurable outcomes.</h2>
+            <span className="story-eyebrow">Why businesses choose RioBizSols</span>
+            <h2 className="story-title">We keep things simple, useful, and focused on growth.</h2>
             <p className="story-des">
-              Our team connects strategy, technology, marketing, and talent so you get a practical roadmap, a polished delivery experience, and solutions that are ready to grow with your business.
+              You tell us what you want to improve. We help you choose the right digital, marketing, staffing, or product solution and then support you until it is ready to work for your business.
             </p>
             <div className="story-benefits">
               {highlights.map((highlight) => (
@@ -55,8 +55,8 @@ function Story() {
                   <CheckIcon />
                 </span>
                 <div>
-                  <strong>100% result-focused</strong>
-                  <span>Practical execution for real business momentum.</span>
+                  <strong>Result-focused work</strong>
+                  <span>Simple planning, clear delivery, and useful support.</span>
                 </div>
               </div>
             </div>
